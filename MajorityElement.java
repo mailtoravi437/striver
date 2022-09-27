@@ -20,7 +20,7 @@ public class MajorityElement {
         for(int i=0;i<n;i++){
             hmap.put(arr[i], hmap.get(arr[i],0)+1);
 
-            if(hmap.get(arr[i])>n/2){
+            if(hmap.get(arr[i])>=n/2){
                 return arr[i];
             }
         }
